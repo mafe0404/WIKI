@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWASP Top 10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            text-align: justify;
+            margin: 10px 0;
+        }
+        .titulo {
+            font-weight: bold;
+        }
+        a {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>OWASP Top 10</h1>
+        
+        <h2>1. ¿En qué consiste?</h2>
+        <p>El OWASP Top 10 es una lista clave que destaca las diez vulnerabilidades más críticas en aplicaciones web, creada por el Open Web Application Security Project (OWASP). Este proyecto se actualiza regularmente para reflejar las tendencias y amenazas emergentes en el ámbito de la seguridad cibernética, garantizando que desarrolladores y profesionales de la seguridad estén informados sobre los riesgos más significativos.</p>
+        <p>Cada vulnerabilidad mencionada en el OWASP Top 10 conlleva un riesgo considerable para la integridad, confidencialidad y disponibilidad de los datos gestionados por las aplicaciones. Por ejemplo, técnicas de ataque como la inyección de SQL o el cross-site scripting (XSS) pueden permitir a los atacantes alterar datos, robar información confidencial o incluso tomar el control de sistemas, lo que puede acarrear graves consecuencias financieras y de reputación para las organizaciones. La finalidad de esta lista no es únicamente informar sobre las amenazas existentes, sino también servir como una guía práctica que ayude a los desarrolladores a implementar medidas de seguridad efectivas desde las primeras etapas del desarrollo de software.</p>
+        
+        <h2>2. Vectores de Ataque Relevantes del OWASP</h2>
+        <p><span class="titulo">1. Inyección de Código:</span> Incluye ataques como la inyección de SQL, donde los atacantes pueden insertar comandos SQL maliciosos en una consulta, comprometiendo la base de datos y permitiendo acceso no autorizado a información sensible.</p>
+        <p><span class="titulo">2. Cross-Site Scripting (XSS):</span> Permite a los atacantes inyectar scripts en páginas web que son vistas por otros usuarios. Esto puede llevar al robo de sesiones, suplantación de identidad y ejecución de acciones no autorizadas en nombre del usuario.</p>
+        <p><span class="titulo">3. Fallas de Autenticación:</span> Estas vulnerabilidades permiten a los atacantes eludir los mecanismos de autenticación, facilitando la suplantación de identidad y el acceso no autorizado a cuentas de usuario.</p>
+        <p><span class="titulo">4. Configuraciones Incorrectas de Seguridad:</span> Errores en la configuración de aplicaciones y servidores que dejan expuestas las aplicaciones a accesos no autorizados. Esto puede incluir configuraciones predeterminadas inseguras o la falta de restricciones de acceso.</p>
+        <p><span class="titulo">5. Exposición de Datos Sensibles:</span> Acceso no autorizado a información confidencial, como contraseñas, datos financieros o información personal, debido a la falta de cifrado o a configuraciones incorrectas.</p>
+        
+        <h2>3. Características del OWASP</h2>
+        <p><span class="titulo">1. Alta Prevalencia:</span> Estas vulnerabilidades son comunes y se encuentran en una amplia variedad de aplicaciones, lo que las convierte en un riesgo significativo para muchas organizaciones.</p>
+        <p><span class="titulo">2. Facilidad de Explotación:</span> Muchas de estas vulnerabilidades pueden ser explotadas utilizando herramientas accesibles y no requieren un nivel elevado de habilidades técnicas, lo que las hace aún más peligrosas.</p>
+        <p><span class="titulo">3. Impacto Severos:</span> La explotación de estas vulnerabilidades puede tener consecuencias graves, incluyendo la pérdida de datos, interrupciones en el servicio y compromisos de seguridad a gran escala.</p>
+        <p><span class="titulo">4. Evolución Constante:</span> Las técnicas de ataque están en constante cambio y adaptación, lo que presenta un desafío continuo para las defensas de seguridad.</p>
+
+        <h2>4. Casos más conocidos de vulnerabilidades</h2>
+        <p><span class="titulo">1. Yahoo (2013-2014):</span> Más de 3 mil millones de cuentas fueron comprometidas en una serie de filtraciones relacionadas con fallas en la autenticación y la gestión de datos.</p>
+        <p><span class="titulo">2. Target (2013):</span> Un ataque comprometió los datos de tarjetas de crédito de alrededor de 40 millones de clientes debido a configuraciones incorrectas y falta de controles adecuados en su red.</p>
+        <p><span class="titulo">3. Ashley Madison (2015):</span> La violación de esta plataforma de citas expuso datos de más de 30 millones de usuarios, incluyendo información sensible y detalles de tarjetas de crédito, a raíz de problemas en la configuración de seguridad.</p>
+        <p><span class="titulo">4. Marriott International (2018):</span> Aproximadamente 500 millones de registros de huéspedes fueron expuestos debido a una violación de datos en la base de datos de Starwood, en gran parte causada por vulnerabilidades en componentes de software antiguos.</p>
+        
+        <h2>5. Cómo se contrarrestan</h2>
+        <p><span class="titulo">1. Validación y Sanitización de Entradas:</span> Asegurar que todos los datos de entrada sean verificados y limpiados para prevenir ataques como inyecciones SQL y XSS.</p>
+        <p><span class="titulo">2. Uso de Frameworks Seguros:</span> Implementar marcos de trabajo que ofrezcan protecciones integradas contra vulnerabilidades comunes, facilitando el desarrollo seguro de aplicaciones.</p>
+        <p><span class="titulo">3. Autenticación Robusta:</span> Utilizar métodos de autenticación multifactor y gestionar de manera adecuada las sesiones de usuario para fortalecer el acceso a las aplicaciones.</p>
+        <p><span class="titulo">4. Formación Continua:</span> Capacitar a los desarrolladores sobre las mejores prácticas de seguridad, promoviendo una cultura de conciencia y prevención de riesgos dentro del equipo.</p>
+        
+        <h3>¿Cuál de las siguientes opciones describe mejor un ataque de Rogue Access Point?</h3>
+        <ul>
+            <li><u style="color: blue;">A) Open Web Application Security Project.</u></li>
+            <li>B) Online Web Application Security Program.</li>
+            <li>C) Open Web Application Security Protocol.</li>
+            <li>D) Official Web Application Security Project.</li>
+        </ul>
+
+        <a href="index.html">Volver a la Wiki</a>
+    </div>
+
+</body>
+</html>
+
